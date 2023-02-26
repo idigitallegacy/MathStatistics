@@ -51,6 +51,7 @@ class BMIPlotter:
         plt.plot(self.__imperic_xvalues, self.__imperic_yvalues)
         plt.xlabel('Value')
         plt.ylabel('Probability')
+        plt.savefig("fig1.png")
         plt.show()
         plt.close()
 
@@ -58,11 +59,13 @@ class BMIPlotter:
         plt.hist(self.__df, bins=30)
         plt.xlabel('Value')
         plt.ylabel('Frequency')
+        plt.savefig("fig2.png")
         plt.show()
         plt.close()
 
     def plot_boxplot(self):
         plt.boxplot(self.__df)
+        plt.savefig("fig3.png")
         plt.show()
         plt.close()
 
