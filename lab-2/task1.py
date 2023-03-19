@@ -86,6 +86,8 @@ def plot_mse(collected_data):
     plt.title("Mean Squared Error from selection size dependency", pad=10, fontsize=15)
     plt.xlabel("Selection size", fontsize=12)
     plt.ylabel("MSE", fontsize=12)
+    plt.xlim([500, 2500])
+    plt.ylim([0, 0.1])
     plt.plot(plot_data.keys(), plot_data.values())
     plt.savefig("./plots/laplace_mse.png")
     plt.close()
