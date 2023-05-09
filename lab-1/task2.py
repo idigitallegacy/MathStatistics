@@ -70,7 +70,7 @@ class BMIPlotter:
         plt.close()
 
 
-data = pd.read_csv("sex_bmi_smokers.csv", delimiter=",")
+data = pd.read_csv("../data/sex_bmi_smokers.csv", delimiter=",")
 male_smokers = data.loc[(data['sex'] == 'male') & (data['smoker'] == 'yes')]
 female_smokers = data.loc[(data['sex'] == 'female') & (data['smoker'] == 'yes')]
 female_healthy = data.loc[(data['sex'] == 'female') & (data['smoker'] == 'no')]
